@@ -1,5 +1,7 @@
 # Urban sounds classification with Convolutional Neural Networks
 
+## Objective 🎯
+
 The objective of this project is to implement CNN models to recognize sound events from the **UrbanSound9K** dataset. The work has been divided into the following notebooks:
 
 1. Data analysis (and related papers brief)
@@ -10,7 +12,7 @@ The objective of this project is to implement CNN models to recognize sound even
 6. Data augmentation pre-processing
 7. CNN model with augmented data (Log-MEL Spectrograms)
 
-## Notebooks
+## Notebooks 📒
 
 1. [Data analysis](https://github.com/GorillaBus/urban-audio-classifier/blob/master/1-data-analysis.ipynb): a brief about previous works with the URbanSound8K dataset (scientific papers), dataset exploration, distribution analysis, listening.
 
@@ -26,15 +28,27 @@ The objective of this project is to implement CNN models to recognize sound even
 
 7. [CNN model with augmented data](https://github.com/GorillaBus/urban-audio-classifier/blob/master/7-cnn-model-augmented.ipynb): using the same CNN architecture and almost identical training procedures with the generated data. Model evaluation and test to compare with previous achievements.
 
+## Acquired Skills 📊
+- Understanding of audio data analysis and processing techniques.
+- Implementation of CNN models for audio classification.
+- Evaluation of different audio features for model performance.
+- Experience with data augmentation techniques for improving model generalization.
+- Interpretation of results and analysis of model performance.
 
-## Getting the dataset
+## Technology 📦
+The project utilizes the following technologies:
+- Programming Language: Python
+- Libraries: TensorFlow, Keras, NumPy, Pandas, Matplotlib, Librosa
+- Tools: Jupyter Notebooks
+
+## Getting The Dataset 📂
 
 Download a copy of the UrbanSounds8K dataset from the [UrbanSound8K home page](https://urbansounddataset.weebly.com/urbansound8k.html).
 
 Make sure to uncompress the dataset root directory into the project root, you should end up with a directory like "UrbanSounds8K" (or a symbolic link to it) in the project root.
 
 
-## Install required libraries
+## Install Required Libraries ⬇️
 
 Make sure that Tensorflow, Keras, LibROSA, IPython, NumPy, Pandas, Matplotlib and SciKit Learn are already installed in your environment.
 
@@ -50,7 +64,7 @@ Note that we are using Tensorflow as Keras back-end, you must set this in your ~
 }
 ```
 
-## The UrbanSound8K dataset
+## The UrbanSound8K Dataset 🎧
 
 The **UrbanSound8K** dataset is a compilation of urban sound recordings, classified in 10 categories according to the paper ["A Dataset and Taxonomy for Urban Sound Research"](https://urbansounddataset.weebly.com/taxonomy.html), which proposes a taxonomical categorization to describe different environmental sound types.
 
@@ -70,7 +84,7 @@ The UrbanSound8K dataset contains 8732 labeled sound slices of varying duration 
 Note that the dataset comes already organized in 10 validation folds. In the case we want to compare our results with other we should stick with this schema.
 
 
-### Dataset metadata
+### Dataset Metadata 📋
 
 The included metadata file ("UrbanSound8K/metadata/metadata.csv") provides all the required information about each audio file:
 
@@ -83,44 +97,27 @@ The included metadata file ("UrbanSound8K/metadata/metadata.csv") provides all t
 * classID: A numeric identifier of the sound class.
 * class: The class label name.
 
+## Related Papers 🔍 
 
+* [Environmental sound classification with convolutional neural networks](https://ieeexplore.ieee.org/abstract/document/7324337), Karol J. Piczak
 
-## References
+* [Dilated convolution neural network with LeakyReLU for environmental sound classification](https://ieeexplore.ieee.org/abstract/document/8096153),  Xiaohu Zhang ; Yuexian Zou ; Wei Shi.
 
-1- Data analysis
-* Taxonomical categorization (resume): https://urbansounddataset.weebly.com/taxonomy.html
-* "A Dataset and Taxonomy for Urban Sound Research":
-http://www.justinsalamon.com/uploads/4/3/9/4/4394963/salamon_urbansound_acmmm14.pdf
-* Basics of Digital Audio: https://theproaudiofiles.com/digital-audio-101-the-basics/
-* Reading wave file headers with Python: https://www.cameronmacleod.com/blog/reading-wave-python
-* The Wave PCM file specification: http://soundfile.sapp.org/doc/WaveFormat/ 
+* [Deep Convolutional Neural Network with Mixup for Environmental Sound Classification](https://arxiv.org/abs/1808.08405), Zhichao Zhang, Shugong Xu, Shan Cao, Shunqing Zhang
 
-2- Data pre-processing
-* The Nyquist theorem: https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem
-* Sampling : Signal Digitalization: http://support.ircam.fr/docs/AudioSculpt/3.0/co/Sampling.html
-* Digital audio conversion: what is Aliasing? https://theproaudiofiles.com/digital-audio-aliasing/
-* Mel Frequency Cepstral Coefficient (MFCC) tutorial: http://practicalcryptography.com/miscellaneous/machine-learning/guide-mel-frequency-cepstral-coefficients-mfccs/
-* Discussion on odd kernel sizes: https://datascience.stackexchange.com/questions/23183/why-convolutions-always-use-odd-numbers-as-filter-size
-* Discussion about normalized audio for CNNs: https://stackoverflow.com/questions/55513652/which-spectrogram-best-represents-features-of-an-audio-file-for-cnn-based-model/56727927#56727927
-* A Comparison of Audio Signal Preprocessing Methods for Deep Neural Networks on Music Tagging: https://arxiv.org/abs/1709.01922
+* [End-to-End Environmental Sound Classification using a 1DConvolutional Neural Network](https://arxiv.org/abs/1904.08990)Sajjad Abdoli, Patrick Cardinal, Alessandro Lameiras Koerich
 
-4- Model optimization
-* Cyclical Learning Rates for Training Neural Networks: https://arxiv.org/abs/1506.01186
-* CLR Keras implementation by Brad Kenstler: https://github.com/bckenstler/CLR
+* [An Ensemble Stacked Convolutional Neural Network Model for Environmental Event Sound Recognition](https://www.mdpi.com/2076-3417/8/7/1152), Shaobo Li, Yong Yao, Jie Hu, Guokai Liu, Xuemei Yao 3, Jianjun Hu
 
-5- Related papers
-* Environmental sound classification with convolutional neural networks, Karol J. Piczak
-* Dilated convolution neural network with LeakyReLU for environmental sound classification, Xiaohu Zhang ; Yuexian Zou ; Wei Shi.
+* [Classifying environmental sounds using image recognition networks](https://www.sciencedirect.com/science/article/pii/S1877050917316599), Venkatesh Boddapati, Andrej Petef, Jim Rasmusson, Lars Lundberg
 
-* Deep Convolutional Neural Network with Mixup for Environmental Sound Classification, Zhichao Zhang, Shugong Xu, Shan Cao, Shunqing Zhang
+* [Environment Sound Classification Using a Two-Stream CNN Based on Decision-Level Fusion](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6479959/), Yu Su, Ke Zhang, Jingyu Wang, Kurosh Madani
 
-* End-to-End Environmental Sound Classification using a 1DConvolutional Neural NetworkSajjad Abdoli, Patrick Cardinal, Alessandro Lameiras Koerich
+## Conclusion 📝
 
-* An Ensemble Stacked Convolutional Neural Network Model for Environmental Event Sound Recognition, Shaobo Li, Yong Yao, Jie Hu, Guokai Liu, Xuemei Yao 3, Jianjun Hu
+This project demonstrates the effectiveness of CNN models for urban sound classification using the UrbanSound9K dataset. By experimenting with different audio features and data augmentation methods, valuable insights are gained into improving model performance and robustness. The project serves as a valuable resource for understanding and implementing sound event classification systems in urban environments.
 
-* Classifying environmental sounds using image recognition networks, Venkatesh Boddapati, Andrej Petef, Jim Rasmusson, Lars Lundberg
+## Contact Me 📨
 
-* Environment Sound Classification Using a Two-Stream CNN Based on Decision-Level Fusion, Yu Su, Ke Zhang, Jingyu Wang, Kurosh Madani
-
-
-### Comments, suggestions and corrections always welcome 
+- **LinkedIn:** [Bilal Fatian](https://www.linkedin.com/in/bilal-fatian-806813254/)
+- **Gmail:** [fatian.bilal@gmail.com](mailto:fatian.bilal@gmail.com)
